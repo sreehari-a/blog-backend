@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_object_sections",
+  "info": {
+    "displayName": "section",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "text"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}
