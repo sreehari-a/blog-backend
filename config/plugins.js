@@ -1,17 +1,20 @@
-module.exports = ({ env }) => ({
+module.exports = ({ env }) => {
+  console.log('test', env)
+  return {
     // ...
     upload: {
       config: {
-        provider: 'aws-s3',
+        provider: "aws-s3",
         providerOptions: {
-          accessKeyId: 'AKIAZ4ZKKBAC2HC72RXP',
-          secretAccessKey: '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',
-          region: 'us-east-1',
+          accessKeyId: env("AWS_ACCESS_KEY_ID"),
+          secretAccessKey: env("AWS_ACCESS_SECRET"),
+          region: env("AWS_REGION"),
           params: {
-            Bucket: 'strapi-images-1457',
+            Bucket: env("AWS_BUCKET_NAME"),
           },
         },
       },
     },
     // ...
-  });
+  };
+};
