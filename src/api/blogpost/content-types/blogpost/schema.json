@@ -24,6 +24,17 @@
       "type": "text"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "photos": {
       "allowedTypes": [
         "images",
         "files",
@@ -31,7 +42,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
     }
   }
 }
