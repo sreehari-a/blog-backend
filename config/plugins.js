@@ -1,4 +1,5 @@
 module.exports = ({ env }) => {
+  console.log('test', env)
   return {
     // ...
     upload: {
